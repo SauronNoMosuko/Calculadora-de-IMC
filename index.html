@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Cálculo de IMC</title>
+    
+    <script src="./JavaScript/script.js"type="module" defer ></script>
+  </head>
+  <body>
+    <div class="error hide">
+      <h2>Digite somente números</h2>
+    </div>
+    <div class="container">
+      <main class="card">
+        <form action="">
+          <h1>Cálculo de IMC</h1>
+
+          <div>
+
+            <div class="peso">
+              <p>Peso (kg)</p> <!--o p poderia ser um label com um for contendo o mesmo id do input pra ficar linkado os 2, mas por estética nao fiz-->
+              <input id="weight" type="text" placeholder="60">
+            </div>
+
+            <div class="altura">
+              <p>Altura (cm)</p>
+              <input id="height" type="text" placeholder="160">
+            </div>
+
+            <button type="submit">Calcular IMC <img src="./assets/Vector.svg" alt="seta do botão"></button>
+
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <div class="modalWrapper">
+      <div class="modal">
+        <div class="card2 modalCard">
+          
+          <button class="close">
+            <img src="./assets/Vector(1).svg" alt="botao de fechar">
+          </button>
+
+          <h2 class="title">
+            <span>Seu IMC é de 28</span>
+          </h2>
+          
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
